@@ -1,0 +1,95 @@
+.wrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    min-height: 100vh;
+}
+
+/*Header*/
+
+.header {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    height: 10rem;
+    text-align: center;
+    background-image: url(../assets/bg01.png);
+}
+
+/*Title*/
+
+.title {
+    padding: 4em 0 4em 0;
+    width: 100%;
+}
+
+.title a{
+    font-size: 35px;
+    letter-spacing: -0.025em;
+    cursor: pointer;
+    color: #474747;
+    font-family: 'Source Sans Pro', sans-serif;
+    font-weight: 600;
+    text-decoration: none;
+    transition: color 0.2s
+}
+
+.title a em{
+    font-weight: 300;
+}
+
+.title a:hover {
+    color: #37c0fb;
+}
+
+/*Navbar*/
+
+.navbar{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    height: 7rem;
+}
+
+.nav{
+    background: #333;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 100%;
+}
+
+.nav ul {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.nav ul li a{
+    font-family: 'Source Sans Pro', sans-serif;
+    font-weight: 300;
+    font-size: 20px;
+    text-decoration: none;
+    color: #c0c0c0;
+    padding: 1.5em 1.2em 1.35em 1.2em;
+    transition: color 0.2s
+}
+
+.nav ul li a:hover{
+    color: #fff;
+}
+
+.nav ul li .home {
+    color: #fff;
+    font-weight: 600;
+}
+
+.bottom {
+    background: #37c0fb;
+    width: 100%;
+    height: 1.2rem;
+}
