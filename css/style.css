@@ -28,7 +28,7 @@
     font-size: 35px;
     letter-spacing: -0.025em;
     cursor: pointer;
-    color: #474747;
+    color: #333333;
     font-family: 'Source Sans Pro', sans-serif;
     font-weight: 600;
     text-decoration: none;
@@ -69,10 +69,27 @@
     align-items: center;
 }
 
+.nav a {
+    display: none;
+    font-size: 18px;
+    letter-spacing: -0.025em;
+    cursor: pointer;
+    color: #fff;
+    font-family: 'Source Sans Pro', sans-serif;
+    font-weight: 600;
+    text-decoration: none;
+    transition: color 0.2s
+}
+
+.nav a em{
+    font-weight: 300;
+}
+
 .nav ul li a{
+    display: flex;
     font-family: 'Source Sans Pro', sans-serif;
     font-weight: 300;
-    font-size: 20px;
+    font-size: 22px;
     text-decoration: none;
     color: #c0c0c0;
     padding: 1.5em 1.2em 1.35em 1.2em;
@@ -92,4 +109,105 @@
     background: #37c0fb;
     width: 100%;
     height: 1.2rem;
+}
+
+/*Media Querys*/
+
+@media only screen and (max-width: 1680px) {
+.title {
+    padding: 3.5em 0 3.5em 0;
+}
+.title a{
+    font-size: 28px;
+
+}
+.navbar {
+    height: 6rem;
+}
+.nav ul li a{
+    font-size: 20px;
+}
+
+@media only screen and (max-width: 1280px) {
+.title {
+    padding: 2.5em 0 2.5em 0;
+}
+.title a{
+    font-size: 25px;
+
+}
+.navbar {
+    height: 5.8rem;
+}
+.nav ul li a{
+    font-size: 18px;
+}
+.bottom{
+    height: 1rem;
+}
+}
+
+@media only screen and (max-width: 980px) {
+.title {
+    padding: 2.2em 0 2.2em 0;
+}
+.title a{
+    font-size: 23px;
+
+}
+.navbar {
+    height: 5.4rem;
+}
+.nav ul li a{
+    font-size: 16px;
+}
+.bottom{
+height: 0.8rem;
+}
+}
+
+@media only screen and (max-width: 840px) {
+.header {
+    height: 1rem;
+}
+.title {
+ display: none;
+}
+.nav ul li a{
+    display: none;
+}
+.nav a {
+    display: flex;
+}
+.navbar {
+    height: 3.5rem;
+}
+.bottom{
+height: 0.4rem;
+}
+}
+
+@media only screen and (max-width: 737px) {
+.nav a {
+    font-size: 16px;
+}
+.navbar {
+    height: 3.2rem;
+}
+.bottom{
+height: 0.3rem;
+}
+}
+
+@media only screen and (max-width: 480px) {
+.nav a {
+    font-size: 16px;
+}
+.navbar {
+    height: 3.2rem;
+}
+.bottom{
+height: 0.3rem;
+}
+}
 }
