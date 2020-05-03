@@ -204,9 +204,8 @@
     align-items: center;
     justify-content: center;
     width: 100%;
-    --important-box-rem: 23.5rem;
+    --important-box-rem: 32rem;
     height: var(--important-box-rem);
-    padding: 5rem 5rem;
 }
 
 .importantbox{
@@ -217,7 +216,8 @@
     justify-content: center;
     width: var(--important-box-rem);
     height: var(--important-box-rem);
-    margin-right: 6rem;
+    margin-right: 3rem;
+    margin-left: 3rem;
 }
 
 .fontawesomecircle{
@@ -227,8 +227,8 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    width: 6rem;
-    height: 6rem;
+    width: 100px;
+    height: 100px;
     margin-bottom: 2rem;
 }
 
@@ -236,18 +236,26 @@
     color: #fff;
     font-size: 40px;
 }
-
+.importantboxtext{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+    width: var(--important-box-rem + -100px);
+}
 .importantboxcontainer a{
     font-family: 'Source Sans Pro', sans-serif;
     font-weight: 600;
-    font-size: 26px;
+    --fontsize: 26px;
+    font-size: calc(var(--fontsize) - 2px);
     color: #333;
 }
 
 .importantboxcontainer .importantboxdescription{
     font-weight: 300;
     margin-top: 2rem;
-    font-size: 20px;
+    font-size: calc(var(--fontsize) - 20%);
     line-height: 35px;
 }
 
@@ -284,6 +292,19 @@
 .learnmore a{
     font-size: 22px;
 }
+.importantboxcontainer{
+    --important-box-rem: 30rem;
+}
+.fontawesomecircle{
+    border: 7px solid rgb(245, 245, 245);
+    width: 90px;
+    height: 90px;
+    margin-bottom: 2rem;
+}
+.importantboxcontainer a{
+    --fontsize: 24px;
+}
+}
 
 @media only screen and (max-width: 1280px) {
 .title {
@@ -305,6 +326,25 @@
 .Banner{
     height: 21.5em;
 }
+.importantboxcontainer{
+    --important-box-rem: 26rem;
+}
+.fontawesomecircle{
+    border: 7px solid rgb(245, 245, 245);
+    width: 70px;
+    height: 70px;
+    margin-bottom: 1rem;
+}
+.importantbox{
+    margin-right: 1.5rem;
+    margin-left: 1.5rem;
+}
+.fontawesomecircle i{
+    font-size: 27px;
+}
+.importantboxcontainer a{
+    --fontsize: 22px;
+}
 }
 
 @media only screen and (max-width: 980px) {
@@ -321,7 +361,7 @@
     font-size: 16px;
 }
 .bottom{
-height: 0.8rem;
+    height: 0.8rem;
 }
 .Banner{
     height: 19.5em;
@@ -337,6 +377,22 @@ height: 0.8rem;
 }
 .learnmore a{
     font-size: 16px;
+}
+.importantboxcontainer{
+    --important-box-rem: 23rem;
+    height: var(--important-box-rem);
+}
+.fontawesomecircle{
+    border: 7px solid rgb(245, 245, 245);
+    width: 70px;
+    height: 70px;
+    margin-bottom: 1rem;
+}
+.fontawesomecircle i{
+    font-size: 27px;
+}
+.importantboxcontainer a{
+    --fontsize: 19px;
 }
 }
 
@@ -381,6 +437,47 @@ font-size: 16px;
 .learnmore a{
     font-size: 16px;
 }
+.importantboxcontainer{
+    --important-box-rem: 32rem;
+    height: var(--important-box-rem);
+    margin: 1.5rem 1.5rem;
+    flex-direction: column;
+}
+
+.importantbox {
+    margin: 1.5rem 2rem 1.5rem 2rem;
+    flex-direction: row;
+    justify-content: left;
+    text-align: left;
+    width: 90%;
+    height: 550px;
+}
+.importantboxcontainer .importantboxdescription{
+    margin-top: 0.5rem;
+}
+.importantboxtext {
+    margin-left: 1.5rem;
+    text-align: left;
+    align-items: flex-start;
+    width: 70%;
+}
+.fontawesomecircle{
+    border: 8px solid rgb(245, 245, 245);
+    width: 100px;
+    height: 100px;
+    margin-bottom: 0rem;
+    border-radius: 100px;
+}
+.importantbox{
+    margin-right: 1.5rem;
+    margin-left: 1.5rem;
+}
+.fontawesomecircle i{
+    font-size: 35px;
+}
+.importantboxcontainer a{
+    --fontsize: 22px;
+}
 }
 
 @media only screen and (max-width: 737px) {
@@ -414,7 +511,23 @@ font-size: 16px;
     padding: 0.7em 2em 0.7em 2em;
 }
 .learnmore a{
-    font-size: 14px;
+    font-size: 12px;
+}
+.importantboxcontainer{
+    --important-box-rem: 30rem;
+    height: var(--important-box-rem);
+}
+.fontawesomecircle{
+    border: 7px solid rgb(245, 245, 245);
+    width: 70px;
+    height: 70px;
+    margin-bottom: 1rem;
+}
+.fontawesomecircle i{
+    font-size: 27px;
+}
+.importantboxcontainer a{
+    --fontsize: 20px;
 }
 }
 
@@ -436,8 +549,8 @@ font-size: 16px;
 }
 .learnmore{
     margin-top: 1em;
-    position: fixed;
-    right: 15px;
+    position: absolute;
+    right: 30px;
     left: 0;
 }
 .textandbutton a {
@@ -448,7 +561,21 @@ font-size: 16px;
     padding: 0.7em 2em 0.7em 2em;
 }
 .learnmore a{
-    font-size: 14px;
+    font-size: 10px;
 }
+.importantboxcontainer{
+    --important-box-rem: 45rem;
+}
+.fontawesomecircle{
+    border: 7px solid rgb(245, 245, 245);
+    width: 70px;
+    height: 70px;
+    margin-bottom: 1rem;
+}
+.fontawesomecircle i{
+    font-size: 27px;
+}
+.importantboxcontainer a{
+    --fontsize: 20px;
 }
 }
