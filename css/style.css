@@ -55,7 +55,7 @@
 }
 
 .nav{
-    background: #333;
+    background: linear-gradient(180deg, rgba(51,51,51,1) 0%, rgba(38,38,38,1) 100%);
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -127,7 +127,7 @@
 .imgoverlay {
     width: 100%;
     height: 9.5em;
-    background: rgba(36, 36, 36, 0.692);
+    background: rgba(29, 29, 29, 0.74);
     z-index: 2;
     display: flex;
     flex-direction: column;
@@ -171,9 +171,9 @@
 }
 
 .learnmore {
-    margin-left: 1em;
-    padding: 1.3em 3.2em 1.3em 3.2em;
-    background-color: #37c0fb;
+    margin-left: 2em;
+    padding: 1.2em 3.2em 1.2em 3.2em;
+    background: linear-gradient(180deg, rgba(55,192,251,1) 0%, rgba(43,162,213,1) 100%);
     border-radius: 5px;
     cursor: pointer;
     transition: color 0.5s
@@ -184,7 +184,7 @@
 }
 
 .learnmore:hover{
-    background-color: #51c9fc;
+    background: #51c9fc;
 }
 
 /*#endregion Banner*/
@@ -196,7 +196,6 @@
     align-items: center;
     justify-content: center;
     width: 100%;
-    height: 33.5rem;
 }
 
 .importantboxcontainer{
@@ -207,6 +206,7 @@
     width: 100%;
     --important-box-rem: 23.5rem;
     height: var(--important-box-rem);
+    padding: 5rem 5rem;
 }
 
 .importantbox{
@@ -221,7 +221,7 @@
 }
 
 .fontawesomecircle{
-    background: #37c0fb;
+    background: linear-gradient(180deg, rgba(55,192,251,1) 0%, rgba(43,162,213,1) 100%);
     border-radius: 100px;
     border: 8px solid rgb(245, 245, 245);
     display: flex;
