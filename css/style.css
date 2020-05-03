@@ -202,7 +202,7 @@
     display: flex;
     flex-direction: row;
     align-items: center;
-    justify-content: center;
+    justify-content: space-evenly;
     width: 100%;
     --important-box-rem: 32rem;
     height: var(--important-box-rem);
@@ -216,8 +216,6 @@
     justify-content: center;
     width: var(--important-box-rem);
     height: var(--important-box-rem);
-    margin-right: 3rem;
-    margin-left: 3rem;
 }
 
 .fontawesomecircle{
@@ -244,6 +242,10 @@
     justify-content: center;
     width: var(--important-box-rem + -100px);
 }
+.importantboxdescription{
+    width: 400px;
+}
+
 .importantboxcontainer a{
     font-family: 'Source Sans Pro', sans-serif;
     font-weight: 600;
@@ -303,6 +305,12 @@
 }
 .importantboxcontainer a{
     --fontsize: 24px;
+}
+.importantboxdescription{
+    width: 350px;
+}
+.importantboxdescription{
+    width: 280px;
 }
 }
 
@@ -394,6 +402,9 @@
 .importantboxcontainer a{
     --fontsize: 19px;
 }
+.importantboxdescription{
+    width: 200px;
+}
 }
 
 @media only screen and (max-width: 840px) {
@@ -465,7 +476,7 @@ font-size: 16px;
     border: 8px solid rgb(245, 245, 245);
     width: 100px;
     height: 100px;
-    margin-bottom: 0rem;
+    margin-bottom: auto;
     border-radius: 100px;
 }
 .importantbox{
@@ -477,6 +488,9 @@ font-size: 16px;
 }
 .importantboxcontainer a{
     --fontsize: 22px;
+}
+.importantboxdescription{
+    width: 500px;
 }
 }
 
@@ -529,6 +543,9 @@ font-size: 16px;
 .importantboxcontainer a{
     --fontsize: 20px;
 }
+.importantboxdescription{
+    width: auto;
+}
 }
 
 @media only screen and (max-width: 480px) {
@@ -554,6 +571,9 @@ font-size: 16px;
     left: 0;
 }
 .textandbutton a {
+
+    margin-left: 30px;
+    margin-right: 30px;
     margin-bottom: 3rem;
     font-size: 18px;
 }
